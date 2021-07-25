@@ -10,7 +10,7 @@ function copyToClipboard(textToCopy) {
 
 function changeCase(text, dataCase) {
   const FUNCTIONS = {
-    snake: (text) =>
+    kebab: (text) =>
       text
         .split(" ")
         .map((word) => word.toLowerCase())

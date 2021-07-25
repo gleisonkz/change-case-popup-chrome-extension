@@ -5,14 +5,21 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-primary: #24b3b3;
+  --color-primary-variant: #2ee6a8;
+  --color-background: #404a80;
+  --color-text: #ece6f2;
+}
+
 ul {
   list-style-type: none;
 }
 
 html,
 body {
-  color: white;
-  background-color: #8a6666;
+  color: var(--color-text);
+  background-color: var(--color-background);
   min-width: 400px;
   padding: 12px;
 }
@@ -33,13 +40,14 @@ body {
 }
 
 button {
-  color: white;
+  color: var(--color-text);
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #585269;
+  background-color: var(--color-primary);
+  transition: background-color 0.2s;
 }
 
 button:hover {
-  opacity: 0.8;
+  background-color: var(--color-primary-variant);
 }

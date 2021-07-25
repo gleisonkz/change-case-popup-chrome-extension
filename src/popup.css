@@ -17,17 +17,6 @@ body {
   padding: 12px;
 }
 
-.preview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-}
-
-.preview h1 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
 .cases-container {
   margin-top: 10px;
 }

@@ -10,7 +10,7 @@ function changeCase(currentCase) {
       currentCase: currentCase,
     },
     function () {
-      chrome.tabs.executeScript(null, { file: "src/js/content.js" });
+      chrome.tabs.executeScript(null, { file: "src/content.js" });
     }
   );
 }

@@ -4,79 +4,60 @@ const contextMenuItem = {
   contexts: ["selection"],
 };
 
+const subMenuItems = [
+  {
+    title: "To lowercase",
+    id: "lower",
+  },
+  {
+    title: "To UPPERCASE",
+    id: "upper",
+  },
+  {
+    title: "To snake_case",
+    id: "snake",
+  },
+  {
+    title: "To CONSTANT_CASE",
+    id: "constant",
+  },
+  {
+    title: "To camelCase",
+    id: "camel",
+  },
+  {
+    title: "To PascalCase",
+    id: "pascal",
+  },
+  {
+    title: "To kebab-case",
+    id: "kebab",
+  },
+  {
+    title: "To Train-case",
+    id: "train",
+  },
+];
+
 function changeCase(currentCase) {
   chrome.storage.local.set(
     {
       currentCase: currentCase,
     },
     function () {
-      chrome.tabs.executeScript(null, { file: "src/js/content.js" });
+      chrome.tabs.executeScript(null, { file: "src/content.js" });
     }
   );
 }
 
 chrome.contextMenus.create(contextMenuItem);
 
-chrome.contextMenus.create({
-  title: "To lowercase",
-  parentId: "root",
-  id: "lower",
-  contexts: ["selection"],
-  onclick: () => changeCase("lower"),
-});
-
-chrome.contextMenus.create({
-  title: "To UPPERCASE",
-  parentId: "root",
-  id: "upper",
-  contexts: ["selection"],
-  onclick: () => changeCase("upper"),
-});
-
-chrome.contextMenus.create({
-  title: "To snake_case",
-  parentId: "root",
-  id: "snake",
-  contexts: ["selection"],
-  onclick: () => changeCase("snake"),
-});
-
-chrome.contextMenus.create({
-  title: "To CONSTANT_CASE",
-  parentId: "root",
-  id: "constant",
-  contexts: ["selection"],
-  onclick: () => changeCase("constant"),
-});
-
-chrome.contextMenus.create({
-  title: "To camelCase",
-  parentId: "root",
-  id: "camel",
-  contexts: ["selection"],
-  onclick: () => changeCase("camel"),
-});
-
-chrome.contextMenus.create({
-  title: "To PascalCase",
-  parentId: "root",
-  id: "pascal",
-  contexts: ["selection"],
-  onclick: () => changeCase("pascal"),
-});
-
-chrome.contextMenus.create({
-  title: "To kebab-case",
-  parentId: "root",
-  id: "kebab",
-  contexts: ["selection"],
-  onclick: () => changeCase("kebab"),
-});
-
-chrome.contextMenus.create({
-  title: "To Train-case",
-  parentId: "root",
-  id: "train",
-  contexts: ["selection"],
-  onclick: () => changeCase("train"),
+subMenuItems.forEach(({ title, id }) => {
+  chrome.contextMenus.create({
+    title,
+    parentId: "root",
+    id,
+    contexts: ["selection"],
+    onclick: () => changeCase(id),
+  });
 });

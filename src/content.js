@@ -10,20 +10,35 @@ function copyToClipboard(textToCopy) {
 
 function changeCase(text, dataCase) {
   const FUNCTIONS = {
-    kebab: (text) =>
+    lower: (text) =>
       text
         .split(" ")
         .map((word) => word.toLowerCase())
-        .join("-"),
+        .join(" "),
     upper: (text) =>
       text
         .split(" ")
         .map((word) => word.toUpperCase())
         .join(" "),
-    lower: (text) =>
+    snake: (text) =>
       text
         .split(" ")
         .map((word) => word.toLowerCase())
+        .join("_"),
+    kebab: (text) =>
+      text
+        .split(" ")
+        .map((word) => word.toLowerCase())
+        .join("-"),
+    pascal: (text) =>
+      text
+        .split(" ")
+        .map((word) => `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`)
+        .join(" "),
+    pascal: (text) =>
+      text
+        .split(" ")
+        .map((word) => `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`)
         .join(" "),
   };
 

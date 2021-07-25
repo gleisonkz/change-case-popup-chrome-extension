@@ -1,0 +1,20 @@
+{
+  "name": "Change Case Popup",
+  "description": "Quickly change the case (camelCase, CONSTANT_CASE, snake_case, etc) of the current selection or current word.",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/48.png",
+    "48": "icons/48.png",
+    "72": "icons/72.png",
+    "144": "icons/144.png",
+    "196": "icons/196.png"
+  },
+  "permissions": ["tabs", "<all_urls>", "contextMenus"]
+}

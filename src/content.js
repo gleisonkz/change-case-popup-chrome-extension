@@ -20,6 +20,11 @@ function changeCase(text, dataCase) {
         .split(" ")
         .map((word) => word.toUpperCase())
         .join(" "),
+    lower: (text) =>
+      text
+        .split(" ")
+        .map((word) => word.toLowerCase())
+        .join(" "),
   };
 
   const caseFn = FUNCTIONS[dataCase];

@@ -1,5 +1,6 @@
 const $buttons = document.querySelectorAll("button");
 const $selected = document.querySelector(".selected-text");
+const $output = document.querySelector(".output-text");
 let selectedText;
 $buttons.forEach(($button) =>
   $button.addEventListener("click", () => changeCase(selectedText, $button.dataset.case))
@@ -17,6 +18,7 @@ function changeCase(text, dataCase) {
   const caseFn = functions[dataCase];
   if (!caseFn) return;
   const outputPhrase = caseFn(text);
+  $output.innerText = outputPhrase;
   copyToClipboard(outputPhrase);
 }
 
@@ -27,7 +29,7 @@ function copyToClipboard(textToCopy) {
   $input.select();
   document.execCommand("copy");
   document.body.removeChild($input);
-  alert("Copied the text: " + $input.value);
+  alert("Text copied to the clipboard");
 }
 
 function onSelection(text) {

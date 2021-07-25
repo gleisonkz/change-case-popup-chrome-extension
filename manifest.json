@@ -10,11 +10,11 @@
     "default_popup": "src/popup.html"
   },
   "icons": {
-    "16": "icons/48.png",
-    "48": "icons/48.png",
+    "16": "icons/16.png",
+    "50": "icons/50.png",
     "72": "icons/72.png",
     "144": "icons/144.png",
-    "196": "icons/196.png"
+    "167": "icons/167.png"
   },
   "permissions": ["tabs", "contextMenus", "http://*/", "https://*/", "storage"],
   "content_scripts": [

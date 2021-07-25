@@ -1,7 +1,7 @@
 const $buttons = document.querySelectorAll("button");
 const $selected = document.querySelector(".selected-text");
 let selectedText;
-$buttons.forEach(($button) => $button.addEventListener(changeCase));
+$buttons.forEach(($button) => $button.addEventListener("click", changeCase));
 
 function changeCase(text) {
   alert(text);

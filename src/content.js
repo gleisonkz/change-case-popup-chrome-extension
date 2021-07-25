@@ -30,21 +30,34 @@ function changeCase(text, dataCase) {
         .split(" ")
         .map((word) => word.toUpperCase())
         .join("_"),
+    camel: (text) =>
+      text
+        .split(" ")
+        .map((word, index) => {
+          const isFirst = index === 0;
+          return isFirst ? word.toLowerCase() : word.toUpperCase();
+        })
+        .join(" "),
+    pascal: (text) =>
+      text
+        .split(" ")
+        .map((word) => `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`)
+        .join(" "),
     kebab: (text) =>
       text
         .split(" ")
         .map((word) => word.toLowerCase())
         .join("-"),
-    pascal: (text) =>
+    train: (text) =>
       text
         .split(" ")
-        .map((word) => `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`)
-        .join(" "),
-    pascal: (text) =>
-      text
-        .split(" ")
-        .map((word) => `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`)
-        .join(" "),
+        .map((word, index) => {
+          const isFirst = index === 0;
+          return isFirst
+            ? `${word.slice(0, 1).toUpperCase()}${word.slice(1)}`
+            : word.toLowerCase();
+        })
+        .join("-"),
   };
 
   const caseFn = FUNCTIONS[dataCase];

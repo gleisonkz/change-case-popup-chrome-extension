@@ -5,51 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Change Case</title>
+    <link rel="stylesheet" href="./popup.css" />
   </head>
   <body>
-    <div>
-      <div>
-        <h1>Selected Text</h1>
-        <p class="selected-text">This should be replaced with the selected text</p>
+    <main>
+      <div class="preview">
+        <div>
+          <h1>Selected Text</h1>
+          <p class="selected-text">This should be replaced with the selected text</p>
+        </div>
 
-        <p class="output-text"></p>
+        <div>
+          <h1>Output Text</h1>
+          <p class="output-text">This should be replaced with the output text</p>
+        </div>
       </div>
 
-      <h2>Common Cases</h2>
+      <div class="cases-container common-cases">
+        <h2>Common Cases</h2>
+        <ul>
+          <li>
+            <button data-case="lower">lowercase</button>
+          </li>
+          <li>
+            <button data-case="upper">UPPERCASE</button>
+          </li>
+        </ul>
+      </div>
 
-      <ul>
-        <li>
-          <button data-case="lower">lowercase</button>
-        </li>
-        <li>
-          <button data-case="upper">UPPERCASE</button>
-        </li>
-      </ul>
-    </div>
-
-    <div>
-      <h2>Programming Cases</h2>
-      <ul>
-        <li>
-          <button data-case="snake">snake_case</button>
-        </li>
-        <li>
-          <button data-case="constant">CONSTANT_CASE</button>
-        </li>
-        <li>
-          <button data-case="camel">camelCase</button>
-        </li>
-        <li>
-          <button data-case="pascal">PascalCase</button>
-        </li>
-        <li>
-          <button data-case="kebab">kebab-case</button>
-        </li>
-        <li>
-          <button data-case="train">Train-Case</button>
-        </li>
-      </ul>
-    </div>
+      <div class="cases-container proggraming-cases">
+        <h2>Programming Cases</h2>
+        <ul>
+          <li>
+            <button data-case="snake">snake_case</button>
+          </li>
+          <li>
+            <button data-case="constant">CONSTANT_CASE</button>
+          </li>
+          <li>
+            <button data-case="camel">camelCase</button>
+          </li>
+          <li>
+            <button data-case="pascal">PascalCase</button>
+          </li>
+          <li>
+            <button data-case="kebab">kebab-case</button>
+          </li>
+          <li>
+            <button data-case="train">Train-Case</button>
+          </li>
+        </ul>
+      </div>
+    </main>
     <script src="./popup.js"></script>
   </body>
 </html>

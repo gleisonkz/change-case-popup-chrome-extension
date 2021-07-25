@@ -25,6 +25,11 @@ function changeCase(text, dataCase) {
         .split(" ")
         .map((word) => word.toLowerCase())
         .join("_"),
+    constant: (text) =>
+      text
+        .split(" ")
+        .map((word) => word.toUpperCase())
+        .join("_"),
     kebab: (text) =>
       text
         .split(" ")

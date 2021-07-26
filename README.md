@@ -138,14 +138,14 @@ Para executar esse projeto você precisa baixar este repositório, ir seguir os 
 
 |                           :page_facing_up:                           |
 | :------------------------------------------------------------------: |
-|                    Converter frase para lowercase                    |
-|                    Converter frase para UPPERCASE                    |
-|                   Converter frase para snake_case                    |
-|                  Converter frase para CONSTANT_CASE                  |
-|                    Converter frase para camelCase                    |
-|                   Converter frase para PascalCase                    |
-|                   Converter frase para kebab-case                    |
-|                   Converter frase para Train-Case                    |
+|             Converter trecho selecionado para lowercase              |
+|             Converter trecho selecionado para UPPERCASE              |
+|             Converter trecho selecionado para snake_case             |
+|           Converter trecho selecionado para CONSTANT_CASE            |
+|             Converter trecho selecionado para camelCase              |
+|             Converter trecho selecionado para PascalCase             |
+|             Converter trecho selecionado para kebab-case             |
+|             Converter trecho selecionado para Train-Case             |
 |            Copiar resultado da conversão para o clipboard            |
 | Conversão pelo popup da extensão ou menu de contexto (botão direito) |
 

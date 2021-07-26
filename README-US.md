@@ -100,6 +100,27 @@ It is possible to do the conversion in two ways
 
 ---
 
+## :sparkles: **Features**
+
+<div align="center">
+
+|                              :page_facing_up:                               |
+| :-------------------------------------------------------------------------: |
+|                    Selected text conversion to lowercase                    |
+|                    Selected text conversion to UPPERCASE                    |
+|                   Selected text conversion to snake_case                    |
+|                  Selected text conversion to CONSTANT_CASE                  |
+|                    Selected text conversion to camelCase                    |
+|                   Selected text conversion to PascalCase                    |
+|                   Selected text conversion to kebab-case                    |
+|                   Selected text conversion to Train-Case                    |
+|                     Copy conversion result to clipboard                     |
+| Conversion can be done by extension's popup or context menu (right-click) ) |
+
+</div>
+
+---
+
 ## :boy: **Author**
 
 <div align="center">

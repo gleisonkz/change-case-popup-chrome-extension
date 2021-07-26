@@ -20,8 +20,8 @@
 </p>
 
 <p align="center">
- <a href="#eye_speech_bubble-preview">Preview</a> •
  <a href="#information_source-about">About</a> • 
+ <a href="#eye_speech_bubble-preview">Preview</a> •
  <a href="#hammer_and_wrench-technologies">Technologies</a> • 
  <a href="#brain-applied-concepts">Concepts</a> • 
   <a href="#sparkles-features">Features</a> •

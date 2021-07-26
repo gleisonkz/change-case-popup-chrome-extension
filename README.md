@@ -37,7 +37,7 @@
 
 <div align="center">
 
-Ultimamente depois que descobri o fantástico mundo das extensões qualquer atividade no meu dia a dia que possa ser automatizado por uma extensão, é porta para um pequeno projeto :).
+Ultimamente depois que descobri o fantástico mundo das extensões qualquer atividade no meu dia a dia que possa ser automatizado por uma extensão, é porta para um pequeno projeto 😃.
 
 Essa extensão permite realizar a conversão de um trecho de texto selecionado para diversos padrões de nomenclatura utilizados no dia a dia de um desenvolvedor.
 

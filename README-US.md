@@ -35,7 +35,7 @@
 
 <div align="center">
 
-Lately, after I discovered this fantastic world of extensions, any activity in my daily life can be automated by an extension. is an open door to a small project :).
+Lately, after I discovered this fantastic world of extensions, any activity in my daily life can be automated by an extension. is an open door to a small project 😃.
 
 This extension allows you to convert a selected snippet of text to various naming standards used in a developer's daily life.
 

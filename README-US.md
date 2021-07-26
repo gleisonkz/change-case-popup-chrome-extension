@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">   
-  <img alt="Top Language" src="https://img.shields.io/github/languages/top/gleisonkz/change-case-popup-chrome?color=3498db&style=for-the-badge">
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/change-case-popup-chrome?color=3498db&style=for-the-badge">   
+  <img alt="Top Language" src="https://img.shields.io/github/languages/top/gleisonkz/change-case-popup-chrome-extension?color=3498db&style=for-the-badge">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gleisonkz/change-case-popup-chrome-extension?color=3498db&style=for-the-badge">   
   <a href="https://github.com/gleisonkz">
     <img alt="Developed by Gleison" src="https://img.shields.io/badge/Developer-Gleison-%3498db?color=3498db&style=for-the-badge">
   </a>  

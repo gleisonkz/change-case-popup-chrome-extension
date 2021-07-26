@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  <img alt="Chrome Extension" src=".github/logo.png" width="250px"/>
+  <img alt="Change Case Chrome Extension" src=".github/logo.png" width="250px"/>
 </p>
 
 <p align="center"> 
